@@ -81,7 +81,7 @@ find . -type f -name .gitignore | xargs rm
     --without-readline \
     --datadir=%_datadir/pgsql
 
-%make_build -C "src/interfaces/ecpg"
+%make_build -C "src/interfaces/ecpg" -j1
 
 
 %install
